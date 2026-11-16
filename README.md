@@ -14,6 +14,8 @@ python3 -m venv .venv
 ## Take a snapshot
 
 ```sh
+export OPENREVIEW_USERNAME=you@example.com  
+export OPENREVIEW_PASSWORD=yourpassword  
 .venv/bin/python download.py      # one paginated pass over all submissions and reviews
 .venv/bin/python build_site.py    # writes docs/data/ from snapshots/
 git add docs && git commit -m "Add snapshot" && git push
